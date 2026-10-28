@@ -1,0 +1,11 @@
+# Reverse proxy for Mujaddidya Sultania
+# Deploy this repository on Netlify. Every request is proxied to the
+# official space-z deployment, so visitors stay on your custom domain
+# and the space-z address is not shown in the address bar.
+# The app itself is not copied or changed here.
+
+[[redirects]]
+  from = "/*"
+  to = "https://mujaddidyasultaniapp.space-z.ai/:splat"
+  status = 200
+  force = true
